@@ -1,1 +1,41 @@
+U.S. Household Income Analysis Using SQL: Cleaning, Standardization & EDA
 
+Overview:
+Developed a complete SQL workflow to clean, standardize, and analyze real-world U.S. household income data. The project focused on improving data quality and extracting insights for socioeconomic analysis.
+
+Steps Taken:
+
+1. Data Cleaning:
+
+Removed duplicates using unique IDs
+
+Addressed missing/zero values in key fields (Place, ALand, AWater)
+
+Verified data integrity across geographical columns
+
+2. Data Standardization:
+
+Corrected typos (e.g., "georia" → "Georgia")
+
+Standardized state/type classifications
+
+Fixed inconsistent location names
+
+3. Exploratory Data Analysis (EDA):
+
+Computed summary stats at state, type, and city levels
+
+Ranked regions by average household income
+
+Analyzed total land and water area by state
+
+Use Cases:
+
+Data cleaning and transformation practice
+
+EDA for income-based regional comparisons
+
+Foundation for visualization or ML applications
+
+Tools:
+SQL, real-world U.S. household income datasets
