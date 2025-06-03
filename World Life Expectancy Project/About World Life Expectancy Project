@@ -1,1 +1,16 @@
+This document is a SQL script for data cleaning and exploratory data analysis (EDA) on a dataset called world_life_expectancy. It contains SQL queries and comments that:
 
+Clean the Data:
+
+Remove duplicate rows based on country and year.
+Fill in missing values for the "Status" column (e.g., Developed/Developing) using data from other years for the same country.
+Fill in missing values for the "Life expectancy" column by averaging the values from the previous and next years for that country.
+Analyze the Data (EDA):
+
+Calculate the increase in life expectancy for each country over 15 years.
+Find average life expectancy by year.
+Explore the relationship between GDP and life expectancy.
+Compare life expectancy between developed and developing countries.
+Analyze the relationship between BMI and life expectancy by country.
+Investigate adult mortality trends using rolling totals.
+The script uses advanced SQL techniques (like window functions and subqueries) and is structured to both clean the data and extract meaningful insights from it.
