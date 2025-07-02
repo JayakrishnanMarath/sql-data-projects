@@ -1,0 +1,61 @@
+Project Title:
+Player Behavior and Reward Distribution in PlayGrid Gaming Platform
+
+Overview:
+PlayGrid is a real-money online gaming company offering multiplayer games such as Ludo. 
+Users can register as players, deposit money onto the platform, and participate in real-time games against other players. 
+Winners can withdraw their earnings while the platform charges a nominal service fee.
+To encourage retention and sustained engagement, PlayGrid allocates loyalty rewards to players based on their activity, 
+including games played, deposits made, and withdrawal behavior. T
+his project explores how player actions translate into reward points and how those points are distributed fairly.
+
+Objective:
+Analyze and assess player engagement, transaction behavior, and game activity to determine:
+Player-wise performance during defined time slots in October.
+Fair distribution of a ₹50,000 bonus among the top 50 performers.
+The effectiveness and fairness of the loyalty point formula used by PlayGrid.
+
+Loyalty Point Formula Used:
+Loyalty Points = 
+(0.01 × Total Deposits) + 
+(0.005 × Total Withdrawals) + 
+(0.001 × MAX(Deposits – Withdrawals, 0)) + 
+(0.2 × Number of Games Played)
+
+
+Slot-Based Loyalty Points
+S1: 12:00 AM to 11:59 AM
+S2: 12:00 PM to 11:59 PM
+
+Part- A
+
+1: Loyalty points were calculated separately for these slots:
+
+a: 2nd October – Slot S1
+b: 16th October – Slot S2
+c: 18th October – Slot S1
+d: 26th October – Slot S2
+
+Monthly Ranking
+1: All players were ranked based on total loyalty points earned in October. In case of a tie, the number of games played was used as the secondary ranking factor.
+2: Other Metrics Calculated
+3: Average deposit amount across all players
+4: Average deposit amount per user in October
+5: Average number of games played per user
+
+Part B – Bonus Distribution
+
+PlayGrid allocated a ₹50,000 bonus pool to reward its top 50 players for the month.
+Key Questions Addressed:
+
+Should the bonus be distributed solely based on loyalty points?
+Should other metrics (like number of games played or deposit-to-profit ratio) be considered?
+How can we ensure fairness and proportional distribution?
+A weighted model was proposed to allocate bonuses proportionally based on each top player’s contribution (e.g., loyalty points or performance ratio) to the group total.
+
+Part C – Formula Evaluation
+
+The final section assessed whether the existing loyalty point formula is:
+Fair to all types of players (high depositors, high gamers, or balanced users)
+Scalable and adaptable for edge cases (e.g., users depositing large sums but playing few games)
+Recommendations were provided to make the formula more balanced — such as setting caps, introducing dynamic weights, or linking bonus payout more directly to player profit or engagement metrics.
